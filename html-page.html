@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dasar-dasar HTML</title>
+    <link rel="stylesheet" href="stylePage.css" />
+</head>
+<body>
+    <header>
+        <div class="navbar">
+         <div class="logo"><a href="web-main.html">Lyra</a></div>
+         <ul class="links">
+             <li><a href="web-main.html">Home</a></li>
+             <li><a href="about">About</a></li>
+             <li><a href="html-page.html">HTML</a></li>
+             <li><a href="contact-page.html">Contact</a></li>
+         </ul>
+         <a href="signup-page.html" class="action_btn">Sign Up</a>
+         <div class="toggle_btn">
+             <i class="fa-solid fa-bars"></i>
+         </div>
+        </div>
+ 
+        <div class="dropdown_menu">
+         <li><a href="web-main.html">Home</a></li>
+         <li><a href="about">About</a></li>
+         <li><a href="html-page.html">HTML</a></li>
+         <li><a href="contact-page.html">Contact</a></li>
+         <li><a href="signup-page.html" class="action_btn">Sign Up</a></li>
+        </div>
+     </header>
+
+    <br>
+    <section>
+        <h1>Dasar-dasar HTML</h1>
+        <br>
+        <img src="html.jpg" alt="image html" class="small-image" />
+        <br>
+        <br>
+        <h3>Apa itu HTML?</h3>
+        <p>HTML (HyperText Markup Language) adalah sebuah bahasa markup yang digunakan untuk membuat sebuah 
+            halaman web dan menampilkan berbagai informasi di dalam 
+            sebuah browser. HTML mendefinisikan struktur halaman web dengan serangkaian elemen. Setiap elemen HTML diwakili oleh tag, contohnya <code>&lt;html&gt;</code>, <code>&lt;head&gt;</code>, dan <code>&lt;body&gt;</code>.</p>
+        <br>
+
+        <h3>Ciri-ciri Dokumen HTML</h3>
+        <p>Dibuka dengan Doctype Declaration, dokumen HTML dimulai dengan deklarasi <code>&lt;!DOCTYPE html&gt;</code>, yang memberi tahu browser bahwa dokumen ini adalah HTML5.</p>
+        <br>
+
+        <h3>Tag Pembuka dan Penutup</h3>
+        <p>Seluruh isi dokumen HTML dibungkus di dalam tag <code>&lt;html&gt;</code> dan ditutup dengan <code>&lt;/html&gt;</code>. Ini menandakan awal dan akhir dokumen HTML.</p>
+        <br>
+
+        <h3>Tag, Atribut, dan Elemen</h3>
+        <ul>
+            <li><strong>Tag</strong>: Simbol atau kata kunci yang dikelilingi oleh tanda kurung sudut, seperti <code>&lt;p&gt;</code> untuk paragraf.</li>
+            <li><strong>Atribut</strong>: Informasi tambahan pada tag yang memberikan informasi lebih detail, seperti <code>src</code> pada tag <code>&lt;img&gt;</code>.</li>
+            <li><strong>Elemen</strong>: Kombinasi dari tag pembuka, isi, dan tag penutup, seperti <code>&lt;p&gt;Ini adalah paragraf.&lt;/p&gt;</code>.</li>
+        </ul>
+        <br>
+        <h3>Penulisan Tag</h3>
+        <p>HTML memiliki dua jenis tag:</p>
+        <ul>
+            <li><strong>Tag Berpasangan</strong>: Memiliki tag pembuka dan penutup, seperti <code>&lt;p&gt;</code> dan <code>&lt;/p&gt;</code>.</li>
+            <li><strong>Tag Tunggal</strong>: Tidak memiliki tag penutup, seperti <code>&lt;br&gt;</code> untuk membuat baris baru.</li>
+        </ul>
+        <br>
+        <h3>Tag Heading</h3>
+        <p>Heading digunakan untuk membuat judul, dengan ukuran dari <code>&lt;h1&gt;</code> (paling besar) hingga <code>&lt;h6&gt;</code> (paling kecil):</p>
+        <pre>
+<code>&lt;h1&gt;Judul 1&lt;/h1&gt; 
+ &lt;h2&gt;Judul 2&lt;/h2&gt; 
+ &lt;h3&gt;Judul 3&lt;/h3&gt; 
+ &lt;h4&gt;Judul 4&lt;/h4&gt; 
+ &lt;h5&gt;Judul 5&lt;/h5&gt; 
+ &lt;h6&gt;Judul 6&lt;/h6&gt;
+</code>
+        </pre>
+
+        <h3>Tag Paragraf</h3>
+        <p>Tag <code>&lt;p&gt;</code> digunakan untuk membuat paragraf:</p>
+        <pre>
+            <code>&lt;p&gt;Ini adalah paragraf.&lt;/p&gt;</code>
+        </pre>
+
+        <h3>HR dan BR</h3>
+        <p><code>&lt;hr&gt;</code> digunakan untuk membuat garis horizontal, dan <code>&lt;br&gt;</code> digunakan untuk membuat baris baru:</p>
+        <pre>
+<code>&lt;p&gt;Teks ini diakhiri dengan garis horizontal.&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;Teks ini berakhir dengan baris baru.&lt;br&gt;
+Teks di bawahnya di baris baru.&lt;/p&gt;</code>
+        </pre>
+
+        <h3>Font Tag</h3>
+        <p>Tag <code>&lt;font&gt;</code> digunakan untuk mengatur tampilan font, tetapi ini adalah tag yang sudah usang. Sebagai gantinya, gunakan CSS. Namun, berikut contoh penggunaannya:</p>
+        <pre>
+            <code>&lt;font color="blue" size="4"&gt;Teks ini berwarna biru dan berukuran 4.&lt;/font&gt;</code>
+        </pre>
+
+        <h3>Image Tag</h3>
+        <p>Tag <code>&lt;img&gt;</code> digunakan untuk menampilkan gambar. Atribut <code>src</code> menunjukkan lokasi gambar, dan <code>alt</code> memberikan teks alternatif jika gambar tidak bisa ditampilkan:</p>
+        <pre>
+            <code>&lt;img src="gambar.jpg" alt="Deskripsi gambar"&gt;</code>
+        </pre>
+
+        <h3>Anchor / Hyperlink Tag</h3>
+        <p>Tag <code>&lt;a&gt;</code> digunakan untuk membuat hyperlink. Atribut <code>href</code> menunjukkan tujuan link:</p>
+        <pre>
+            <code>&lt;a href="https://www.google.com"&gt;Kunjungi Google&lt;/a&gt;</code>
+        </pre>
+
+        <h3>Tag Komentar</h3>
+        <p>Komentar di HTML tidak akan ditampilkan di halaman web. Komentar berguna untuk memberi catatan di dalam kode:</p>
+        <pre>
+            <code>&lt;!-- Ini adalah komentar --&gt;</code>
+        </pre>
+
+        <h3>Penutup</h3>
+        <p>Ini adalah beberapa tag dasar dalam HTML. Dengan memahami tag-tag ini, Anda bisa mulai membangun halaman web sederhana. Anda dapat menggabungkan tag ini dan menggunakan CSS untuk memperindah tampilan halaman web Anda.</p>
+    </section>
+
+    <script>
+        const toggleBtn = document.querySelector('.toggle_btn')
+        const toggleBtnIcon = document.querySelector('.toggle_btn i')
+        const dropDownMenu = document.querySelector('.dropdown_menu')
+
+        toggleBtn.onclick = function () {
+            dropDownMenu.classList.toggle('open')
+            const isOpen =  dropDownMenu.classList.contains('open')
+
+            toggleBtnIcon.classList = isOpen
+            ? 'fa-solid fa-xmark'
+            : 'fa-solid fa-bars'
+        }
+    </script>
+    
+</body>
+</html>
